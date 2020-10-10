@@ -348,11 +348,11 @@
                                 <img src='images/vetere_lab_anim.gif' width="120">
                             </div>
                             <script type="text/javascript">
-                                function tl_start() {
+                                function hd_start() {
                                     document.getElementById('hd_vis').style.opacity = "1";
                                 }
 
-                                function tl_stop() {
+                                function hd_stop() {
                                     document.getElementById('hd_vis').style.opacity = "0";
                                 }
                                 tl_stop()
@@ -366,30 +366,30 @@
                         </td>
                     </tr> 
 
-                    <tr onmouseout="ic_stop()" onmouseover="ic_start()" >
+                    <tr onmouseout="cochlear_stop()" onmouseover="cochlear_start()" >
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
-                                <div class="two" id='imagecube'>
-                                    <img src='images/imagecube_post.png' width="120">
+                                <div class="two" id='cochlear'>
+                                    <img src='images/cochlear_fig2.png' width="120">
                                 </div>
-                                <img src='images/imagecube_pre.png' width="120">
+                                <img src='images/cochelar_fig1.png' width="120">
                             </div>
                             <script type="text/javascript">
                                 function ic_start() {
-                                    document.getElementById('imagecube').style.opacity = "1";
+                                    document.getElementById('cochlear').style.opacity = "1";
                                 }
 
                                 function ic_stop() {
-                                    document.getElementById('imagecube').style.opacity = "0";
+                                    document.getElementById('cochlear').style.opacity = "0";
                                 }
                                 ic_stop()
                             </script>
                         </td>
                         <td style="padding:20px;width:75%;vertical-align:top">
-                            <papertitle><big>ImageCube</big></papertitle>
+                            <papertitle><big>Auditory Transduction Modelling of Cochlea Neurons</big></papertitle>
                             <br>
-                            <p><em><a href="data/PyAstro_invite.pdf" target="_blank">Invited</a> for an hour long talk at <a href="http://openastronomy.org/pyastro/2020/" target="_blank">PyAstro 2020</a>, Trinity College Dublin.</em></p>
-                            <p>Built an open source image processing tool in Python to process multi-wavelength astronomy images. On registereing the images from different telescope to a common world coordinate system, they are convolved and re-sampled to a common pixel scale. These images are now put together to form an image cube, to help for easy analysis.</p>
+<!--                             <p><em>XYZ invited at</em></p> -->
+                            <p>Developed a highly simplistic and scalable probabilistic model of the inner ear, focussing on cochlear amplification and modelling auditory transduction. The model was based on fluid dynamics and accurately predictedd empirical responses to tones and even exhibited complex phenomena like two-tone suppression. [Coded in MATLAB]</p>
                         </td>
                     </tr> 
 
