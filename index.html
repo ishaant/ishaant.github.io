@@ -316,7 +316,7 @@
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='noise_gradcam'>
-                                    <img src='images/clean_anim.gif' width="150">
+                                    <img src='images/clean_anim.gif' width="10">
                                 </div>
                                 <img src='images/noisy_anim.gif' width="150">
                             </div>
@@ -339,21 +339,21 @@
                         </td>
                     </tr>
 
-                    <tr onmouseout="tl_stop()" onmouseover="tl_start()" >
+                    <tr onmouseout="hd_stop()" onmouseover="hd_start()" >
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
-                                <div class="two" id='lesion_tl'>
-                                    <img src='images/lesion.jpg' width="120">
+                                <div class="two" id='hd_vis'>
+                                    <img src='images/HD_cell.png' width="120">
                                 </div>
-                                <img src='images/lesion.jpg' width="120">
+                                <img src='images/veterelab_anim.gif' width="120">
                             </div>
                             <script type="text/javascript">
                                 function tl_start() {
-                                    document.getElementById('lesion_tl').style.opacity = "1";
+                                    document.getElementById('hd_vis').style.opacity = "1";
                                 }
 
                                 function tl_stop() {
-                                    document.getElementById('lesion_tl').style.opacity = "0";
+                                    document.getElementById('hd_vis').style.opacity = "0";
                                 }
                                 tl_stop()
                             </script>
