@@ -375,11 +375,11 @@
                                 <img src='images/cochlear_fig1.png' width="120">
                             </div>
                             <script type="text/javascript">
-                                function ic_start() {
+                                function cochlear_start() {
                                     document.getElementById('cochlear').style.opacity = "1";
                                 }
 
-                                function ic_stop() {
+                                function cochlear_stop() {
                                     document.getElementById('cochlear').style.opacity = "0";
                                 }
                                 ic_stop()
@@ -393,30 +393,30 @@
                         </td>
                     </tr> 
 
-                    <tr onmouseout="apnea_stop()" onmouseover="apnea_start()" >
+                    <tr onmouseout="fcs_stop()" onmouseover="fcs_start()" >
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
-                                <div class="two" id='ecg_apnea'>
-                                    <img src='images/apnea_post.png' width="120">
+                                <div class="two" id='fcs_figs'>
+                                    <img src='images/fcs_fig1.png' width="120">
                                 </div>
-                                <img src='images/apnea_pre.png' width="120">
+                                <img src='images/diffusion2.jpg' width="120">
                             </div>
                             <script type="text/javascript">
-                                function apnea_start() {
-                                    document.getElementById('ecg_apnea').style.opacity = "1";
+                                function fcs_start() {
+                                    document.getElementById('fcs_figs').style.opacity = "1";
                                 }
 
-                                function apnea_stop() {
-                                    document.getElementById('ecg_apnea').style.opacity = "0";
+                                function fcs_stop() {
+                                    document.getElementById('fcs_figs').style.opacity = "0";
                                 }
                                 apnea_stop()
                             </script>
                         </td>
                         <td style="padding:20px;width:75%;vertical-align:top">
-                            <papertitle><big>Sleep Apnea Detection on an Embedded Device</big></papertitle>
+                            <papertitle><big>FCS Analysis of Diffusion across the Nuclear Membrane</big></papertitle>
                             <br>
-                            <p><em>Accepted as a <a href="https://link.springer.com/chapter/10.1007/978-3-030-51935-3_40" target="_blank">full paper</a> at <a href="http://icisp-conf.org/" target="_blank">ICISP 2020</a>.</em></p>
-                            <p>We developed a data analysis pipeline combining dataset extraction, segmentation, signal cleaning and filtration to detect the presence of sleep apnea using SVMs. On testing our approach on the MIT-Physionet dataset, we find that the low computational complexity makes it well suited for deployment on embedded devices such as the Raspberry Pi.</p>
+<!--                             <p><em>Accepted as a <a href="https://link.springer.com/chapter/10.1007/978-3-030-51935-3_40" target="_blank">full paper</a> at <a href="http://icisp-conf.org/" target="_blank">ICISP 2020</a>.</em></p> -->
+                            <p>Employed times lapse confocal fluorescence imaging to study the transport of dye labeled dextran molecules of different sizes through the nuclear pore complexes. It includes analysis of single photon as well as time-averaged fluorescence data obtained through a confocal microscope examination of cells during the diffusion process.</p>
                         </td>
                     </tr> 
 
