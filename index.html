@@ -53,7 +53,7 @@
                             &nbsp|&nbsp
                             <a href="#experience" onclick=Expand("experience")>Experience</a>
                             &nbsp|&nbsp
-                            <a href="#education" onclick=Expand("education")>Education</a>
+                            <a href="#experience" onclick=Expand("experience")>Education</a>
                             &nbsp|&nbsp
                             <a href="#projects" onclick=Expand("projects")>Projects</a>
                             &nbsp|&nbsp
@@ -312,30 +312,30 @@
 
                 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-                    <tr onmouseout="covid_stop()" onmouseover="covid_start()" >
+                    <tr onmouseout="noise_stop()" onmouseover="noise_start()" >
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
-                                <div class="two" id='covid_gradcam'>
-                                    <img src='images/covid_post.png' width="120">
+                                <div class="two" id='noise_gradcam'>
+                                    <img src='images/clean_anim.gif' width="120">
                                 </div>
-                                <img src='images/covid_pre.png' width="120">
+                                <img src='images/noisy_anim.gif' width="120">
                             </div>
                             <script type="text/javascript">
-                                function covid_start() {
-                                    document.getElementById('covid_gradcam').style.opacity = "1";
+                                function noise_start() {
+                                    document.getElementById('noise_gradcam').style.opacity = "1";
                                 }
 
-                                function covid_stop() {
-                                    document.getElementById('covid_gradcam').style.opacity = "0";
+                                function noise_stop() {
+                                    document.getElementById('noise_gradcam').style.opacity = "0";
                                 }
                                 covid_stop()
                             </script>
                         </td>
                         <td style="padding:20px;width:75%;vertical-align:top">
-                            <papertitle><big>CovidDiagnosis: Deep Diagnosis of COVID-19 Patients using Chest X-rays</papertitle></big>
+                            <papertitle><big>DEepNoise 3D</papertitle></big>
                             <br>
-                            <p><em>Accepted for oral presentation at the <a href="http://www.lungworkshop.org/" target="_blank">TIA Workshop</a>, <a href="https://miccai2020.org/" target="_blank">MICCAI 2020</a>.</em></p>
-                            <p>Built a pipeline comprising of models for lung isolation, followed by classification into different disease classes. We further augment our network with symptom embeddings produced by the CheXpert network and achieve excellent results. Our visualisation maps provide trustworthy and interpretable decisions to radiologists for clinical deployment.</p>
+<!--                             <p><em>Accepted for XYZ</a>.</em></p> -->
+                            <p>Building a 3D network that can denoise complex 3D data distributions such as cryo-EM images or MRI scans using only noisy image pairs for training. Our goal is to be able to retain high frequency details after cleaning, an unadressed limitation of current 3D denoising schemes.</p>
                         </td>
                     </tr>
 
